@@ -58,13 +58,16 @@ a[href] {
           position: absolute;
           bottom: 0;
           left: 0;
-          width: 25px;
+          width: 100%;
           height: 2px;
           background: #000;
+          transition: transform .5s;
+          transform: scaleX(.5);
         }
       }
-      &:hover {
+      &:hover, &:hover::after {
         opacity: 0.5;
+        transform: scaleX(1);
       }
     }
   }
@@ -267,10 +270,19 @@ footer {
   .icon-item {
     margin: 0 10px;
     cursor: pointer;
-    Image {
-      &:hover {
-        color: #999;
-      }
-    }
+  }
+}
+ /* <Image
+                src={github}
+                alt="Github"
+                width={25}
+                height={25}
+              /> */
+.ionicon {
+  color: lightblue;
+  width: 30px;
+  height: 25px;
+  &:hover {
+    fill: hsl(226, 94%, 54%);
   }
 }

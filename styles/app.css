@@ -60,12 +60,15 @@ a[href] {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 25px;
+  width: 100%;
   height: 2px;
   background: #000;
+  transition: transform 0.5s;
+  transform: scaleX(0.5);
 }
-.navbar .nav-links .nav-item:hover {
+.navbar .nav-links .nav-item:hover, .navbar .nav-links .nav-item:hover::after {
   opacity: 0.5;
+  transform: scaleX(1);
 }
 
 @media only screen and (min-width: 1920px) {
@@ -253,6 +256,18 @@ footer {
   margin: 0 10px;
   cursor: pointer;
 }
-.icon-items .icon-item Image:hover {
-  color: #999;
+
+/* <Image
+               src={github}
+               alt="Github"
+               width={25}
+               height={25}
+             /> */
+.ionicon {
+  color: lightblue;
+  width: 30px;
+  height: 25px;
+}
+.ionicon:hover {
+  fill: #1b4ff8;
 }/*# sourceMappingURL=app.css.map */
