@@ -36,7 +36,7 @@ export default function Portfolio() {
                         src={portfolio} 
                         alt="foto"
                     />
-                    <h4 className="portfolio-name">Minimalis Digital Libery</h4>
+                    <h4 className="portfolio-name">Minimalis Destinasi </h4>
                     <div className="portfolio-category">Website Dev</div>
                 </div>
             </div>

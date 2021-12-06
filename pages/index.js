@@ -1,5 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
+import github from "public/github.svg"
+import instagram from "public/instagram.svg"
+import nextjs from "public/nextjs.svg"
 import Navbar from "@/components/Navbar";
 import Head from 'next/head'
 
@@ -27,6 +30,37 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <footer>
+        <div className="icon-items">
+          <div className="icon-item">
+            <Image
+              src={github}
+              alt="Github"
+              width={25}
+              height={25}
+            />
+            <a href=""></a>
+          </div>
+          <div className="icon-item">
+            <Image
+              src={instagram}
+              alt="Instagram"
+              width={25}
+              height={25}
+            />
+            <a href=""></a>
+          </div>
+          <div className="icon-item">
+            <Image
+              src={nextjs}
+              alt="Next.js"
+              width={45}
+              height={45}
+            />
+            <a href=""></a>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }

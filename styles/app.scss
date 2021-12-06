@@ -2,6 +2,7 @@
 
 * {
     list-style: none;
+    box-sizing: border-box;
     text-decoration: none;
 }
 body {
@@ -17,6 +18,19 @@ a[href] {
     width: 980px;
     margin: 0 auto;
 }
+// BreakPoint 
+@media only screen and (max-width: 1440px) {
+    .container {
+        width: 980px;
+    }
+}
+@media only screen and (max-width: 1080px) {
+    .container {
+        width: 700px;
+    }
+}
+// BreakPoint 
+
 .navbar {
     margin-top: 3.125em;
     .container {
@@ -55,6 +69,43 @@ a[href] {
         }
     }
 }
+// First BreakPoint
+@media only screen and (min-width: 1920px) {
+    .navbar {
+        margin-top: 3em;
+    }
+}
+@media only screen and (max-width: 1440px) {
+    .navbar {
+        margin-top: 1em;
+    }
+}
+@media only screen and (max-width: 1080px) {
+    .navbar {
+        margin-top: 1em;
+        .logo {
+            font-size: 1.5em;
+        }
+        .nav-links {
+            .nav-item {
+                font-size: .9em;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 600px) {
+    .navbar {
+        margin-top: 2em;
+        .container {
+            justify-content: center;
+        }
+        .nav-links {
+            display: none;
+        }
+    }
+}
+// AKhir First BreakPoint
+
 
 .hero {
     padding: 100px 0;
@@ -84,9 +135,10 @@ a[href] {
             letter-spacing: 1px;
             color: #fff;
             border-radius: 5px;
-            transition: transform .3s;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+            transition: transform .5s ease-in-out;
             &:hover {
-                transform: scale(1.1);
+                transform: rotate(360deg);
             }
         }
     }
@@ -96,6 +148,69 @@ a[href] {
         text-align: right;
     }
 }
+// Batas Media Responsive
+@media only screen and (min-width: 1920px) {
+    .hero {
+        padding: 100px 0;
+    }
+}
+@media only screen and (max-width: 1440px) {
+    .hero {
+        padding: 10px 0;
+    }
+}
+@media only screen and (max-width: 1080px) {
+    .hero {
+        padding: 25px 0;
+        .text-wrapper {
+            .title {
+                font-size: 2em;
+            }
+            .description {
+                font-size: 1.2em;
+                width: 100%;
+            }
+            .cta {
+                padding: 0.6em 1.9em;
+            }
+        }
+        .image-wrapper {
+            width: 50%;
+        }
+    }
+}
+// BreakPoint Smartphone
+@media only screen and (max-width: 600px) {
+    .hero {
+        padding: 75px 0;
+        width: 100%;
+        height: 100%;
+        .container {
+            flex-direction: column;
+            // align-items: center;
+            // justify-content: center;
+        }
+        .text-wrapper {
+            width: 100%;
+            text-align: center;
+            .description {
+                padding: 0 50px;
+            }
+        }
+        .image-wrapper {
+            position: relative;
+            z-index: -100;
+            width: 100%;
+            span {
+                position: relative;
+                left: -8%;
+                transform: translateX(-8%);
+            }
+        }
+    }
+}
+// BreakPoint Smartphone
+// Batas Media Responsive
 .portfolio-wrapper {
     display: flex;
     margin: 0 -10px;
@@ -137,5 +252,18 @@ a[href] {
             height: 10px;
             background-color: #000;
         }
+    }
+}
+
+footer {
+    text-align: center;
+}
+
+.icon-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .icon-item {
+        margin: 0 10px;
     }
 }
