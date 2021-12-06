@@ -57,6 +57,9 @@ export default function Home() {
             </Link>
           </div>
         </div>
+        <div className="text-footer">
+          <p className="text-footer-child">Create  By ❤️  Aefar 2021</p>
+        </div>
       </footer>
     </div>
   );

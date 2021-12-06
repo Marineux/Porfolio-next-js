@@ -39,6 +39,24 @@ export default function Portfolio() {
                     <h4 className="portfolio-name">Minimalis Destinasi </h4>
                     <div className="portfolio-category">Website Dev</div>
                 </div>
+                <div className="portfolio-item">
+                    <Image
+                        className="portfolio-image" 
+                        src={portfolio} 
+                        alt="foto"
+                    />
+                    <h4 className="portfolio-name">Minimalis Destinasi </h4>
+                    <div className="portfolio-category">Website Dev</div>
+                </div>
+                <div className="portfolio-item">
+                    <Image
+                        className="portfolio-image" 
+                        src={portfolio} 
+                        alt="foto"
+                    />
+                    <h4 className="portfolio-name">Minimalis Destinasi </h4>
+                    <div className="portfolio-category">Website Dev</div>
+                </div>
             </div>
           </div>
         </div>
