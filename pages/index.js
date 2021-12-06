@@ -33,31 +33,40 @@ export default function Home() {
       <footer>
         <div className="icon-items">
           <div className="icon-item">
-            <Image
-              src={github}
-              alt="Github"
-              width={25}
-              height={25}
-            />
-            <a href=""></a>
+            <Link href="https://github.com/Marineux">
+            <a target="_blank">
+              <Image
+                src={github}
+                alt="Github"
+                width={25}
+                height={25}
+              />
+            </a>
+            </Link>
           </div>
           <div className="icon-item">
-            <Image
-              src={instagram}
-              alt="Instagram"
-              width={25}
-              height={25}
-            />
-            <a href=""></a>
+            <Link href="/">
+            <a>
+              <Image
+                src={instagram}
+                alt="Instagram"
+                width={25}
+                height={25}
+              />
+            </a>
+            </Link>
           </div>
           <div className="icon-item">
-            <Image
-              src={nextjs}
-              alt="Next.js"
-              width={45}
-              height={45}
-            />
-            <a href=""></a>
+            <Link href="https://nextjs.org/">
+            <a target="_blank">
+              <Image
+                src={nextjs}
+                alt="Next.js"
+                width={45}
+                height={45}
+              />
+            </a>
+            </Link>
           </div>
         </div>
       </footer>

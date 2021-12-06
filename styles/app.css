@@ -251,4 +251,8 @@ footer {
 }
 .icon-items .icon-item {
   margin: 0 10px;
+  cursor: pointer;
+}
+.icon-items .icon-item Image:hover {
+  color: #999;
 }/*# sourceMappingURL=app.css.map */
