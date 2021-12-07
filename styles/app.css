@@ -221,8 +221,21 @@ a[href] {
   margin: 10px 0;
   text-transform: capitalize;
 }
-.portfolio-wrapper .portfolio-item .portfolio-category {
+.portfolio-wrapper .portfolio-item .portfolio-categorys {
   color: #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.portfolio-wrapper .portfolio-item .portfolio-categorys .portfolio-category {
+  margin: 5px 10px;
+}
+.portfolio-wrapper .portfolio-item .portfolio-categorys .portfolio-category.kotak {
+  background-color: salmon;
+  border-radius: 2px;
+  color: white;
+  letter-spacing: 0.5px;
+  padding: 8px 15px;
 }
 
 .contact-links {

@@ -1,8 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
-import nextjs from "public/nextjs.svg"
+import nextjs from "public/nextjs.svg";
 import Navbar from "@/components/Navbar";
-import Head from 'next/head'
+import Head from 'next/head';
 
 export default function Home() {
   return (
